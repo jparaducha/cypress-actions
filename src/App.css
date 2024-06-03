@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.add-new-tile {
+  border: 4px solid #02CC67;
+  width: 240px;
+  height: 240px;
+  margin: 20px;
+  border-radius: 4%;
+}
+
+.plus-sign-y {
+  width: 6px;
+  height: 70px;
+  background-color:  #02CC67;
+  position: relative;
+  top: 37%;
+  left: 50%;
+}
+
+.plus-sign-x {
+  width: 70px;
+  height: 6px;
+  background-color:  #02CC67;
+  position: relative;
+  top: 22%;
+  left: 37%;
+}
+
+.refresh-button {
+  font-weight: 400;
+  font-size: 21px;
+  color: white;
+  background-color: #02CC67;
+  width: 240px;
+  height: 40px;
+  margin-inline: 45%;
+  border:none;
+  margin-top: 10%;
+}
+
+
+.image-container {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 20px;
+}
+
+.base-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.overlay-image {
+  position: absolute;
+  width: 100%; 
+  height: 100%; 
+  fill: #02CC67; 
+  top: 0;
+  left: 0;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-image svg path {
+  background-size: cover;
+  fill: #02CC67; 
+}
+
+.image-container:hover .overlay-image {
+  position: absolute;
+  color:#02CC67;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 1;
+}
